@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Your Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f7fb;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        th,td {
+            padding: 14px 18px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background: #2e3a5c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        th:first-child {
+            background: #fff;
+            color: #2e3a5c;
+        }
+
+        tr:nth-child(2) th {
+            background: #3d4f7c;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        tr:nth-child(2) th:first-child {
+            background: #fff;
+            color: #2e3a5c;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        tr:nth-child(2) th span {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        td:first-child {
+            text-align: left;
+            background: #f7f8fa;
+            color: #555;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) td {
+            background: #fff;
+        }
+
+        tr:nth-child(odd) td {
+            background: #fafbfc;
+        }
+
+        button {
+            padding: 8px;
+            border: none;
+            background: #3d4f7c;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: #2e3a5c;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>starter</th>
+            <th>econom</th>
+            <th>standard</th>
+            <th>professional</th>
+        </tr>
+        <tr>
+            <th>Choose your plan</th>
+            <th>$10<span>per month</span></th>
+            <th>$30<span>per month</span></th>
+            <th>$59<span>per month</span></th>
+            <th>$99<span>per month</span></th>
+        </tr>
+        <tr>
+            <td>Amount of space</td>
+            <td>20GB</td>
+            <td>40GB</td>
+            <td>110GB</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Bandwidth per month</td>
+            <td>120GB</td>
+            <td>240GB</td>
+            <td>610GB</td>
+            <td>1300GB</td>
+        </tr>
+        <tr>
+            <td>Email accounts</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>MySQL databases</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>25h support</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Support tickets per month</td>
+            <td>2</td>
+            <td>6</td>
+            <td>14</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>BUT</button></td>
+            <td><button>BUY</button></td>
+            <td><button>BUY</button></td>
+            <td><button>BUY</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
