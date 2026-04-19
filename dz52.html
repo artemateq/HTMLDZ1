@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            margin: 0;
+        }
+
+        .progress {
+            width: 400px;
+            height: 30px;
+            background: #ddd;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(90deg, #4caf50, #81c784);
+            animation: move 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>
