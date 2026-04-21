@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>William Shakespeare — Writers</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+  
+
+
+
+  body {
+    background: var(--bg);
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 17px;
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+ 
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--red);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  }
+
+  nav .inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+  }
+
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 46px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+  }
+
+  nav a.brand {
+    background: rgba(0,0,0,0.25);
+    letter-spacing: 0.08em;
+  }
+
+  nav a:hover {
+    background: var(--red-dark);
+  }
+
+  nav a.brand:hover {
+    background: rgba(0,0,0,0.4);
+  }
+
+
+  .page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+ 
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 10px 0 14px;
+  }
+
+  .source {
+    font-size: 0.82rem;
+    color: var(--link);
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  p { margin-bottom: 14px; }
+
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  
+  .infobox {
+    align-self: start;
+  }
+
+  .infobox img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+
+  .infobox table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .infobox td {
+    padding: 4px 6px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .infobox td:first-child {
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+    width: 56px;
+  }
+
+  
+  .similar h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .similar-grid {
+    border: 1px solid var(--border);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .author-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text);
+  }
+
+  .author-thumb img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="#" class="brand">Writers</a>
+    <a href="#">Discussions</a>
+    <a href="#">Books</a>
+    <a href="#">The authors</a>
+    <a href="#">Readers</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="hero">
+    <div class="content">
+      <h1>William Shakespeare</h1>
+      <hr class="divider">
+      <div class="source">From Wikipedia, the free encyclopedia</div>
+
+      <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English poet, playwright and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the "Bard of Avon". His extant works, including collaborations, consist of approximately 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright.</p>
+
+      <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married <a href="#">Anne Hathaway</a>, with whom he had three children: Susanna and twins Hamnet and Judith. Sometime between 1585 and 1592, he began a successful career in London as an actor, writer, and part-owner of a playing company called the <a href="#">Lord Chamberlain's Men</a>, later known as the King's Men. At age 49 (around 1613), he appears to have retired to Stratford, where he died three years later. Few records of Shakespeare's private life survive; this has stimulated considerable speculation about such matters as his physical appearance, his sexuality, his religious beliefs, and whether the works attributed to him were written by others. Such theories are often criticised for failing to adequately note that few records survive of most commoners of the period.</p>
+
+      <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. Until about 1608, he wrote mainly tragedies, among them <em>Hamlet</em>, <em>Othello</em>, <em>King Lear</em>, and <em>Macbeth</em>, all considered to be among the finest works in the English language. In the last phase of his life, he wrote tragicomedies (also known as romances) and collaborated with other playwrights.</p>
+
+      <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime. However, in 1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a more definitive text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works that included all but two of his plays. The volume was prefaced with a poem by Ben Jonson, in which Jonson presciently hails Shakespeare in a now-famous quote as "not of an age, but for all time".</p>
+
+      <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by new movements in scholarship and performance. His plays remain popular and are studied, performed, and reinterpreted through various cultural and political contexts around the world.</p>
+    </div>
+
+    <aside class="infobox">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/440px-Shakespeare.jpg" alt="William Shakespeare portrait">
+      <table>
+        <tr><td>Born</td><td>26 April 1564</td></tr>
+        <tr><td>Died</td><td>23 April 1616</td></tr>
+        <tr><td>Spouse</td><td>Anne Hathaway (m. 1582)</td></tr>
+        <tr><td>Children</td><td>Susanna Hall<br>Hamnet Shakespeare<br>Judith Quiney</td></tr>
+        <tr><td>Parents</td><td>John Shakespeare (father)<br>Mary Arden (mother)</td></tr>
+      </table>
+    </aside>
+  </div>
+
+  <div class="similar">
+    <h2>Similar authors:</h2>
+    <div class="similar-grid">
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Anne_Hathaway%27s_Cottage_-_geograph.org.uk_-_855449.jpg/220px-Anne_Hathaway%27s_Cottage_-_geograph.org.uk_-_855449.jpg" alt="Anne Hathaway">
+        <span>Anne Hathaway</span>
+      </div>
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Charles_Dickens_circa_1860s.jpg/220px-Charles_Dickens_circa_1860s.jpg" alt="Charles Dickens">
+        <span>Charles Dickens</span>
+      </div>
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/OscarWilde.jpg/220px-OscarWilde.jpg" alt="Oscar Wilde">
+        <span>Oscar Wilde</span>
+      </div>
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Miguel_de_Cervantes.jpg/220px-Miguel_de_Cervantes.jpg" alt="Miguel de Cervantes">
+        <span>Miguel de Cervantes</span>
+      </div>
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Edgar_Allan_Poe_2.jpg/220px-Edgar_Allan_Poe_2.jpg" alt="Edgar Allan Poe">
+        <span>Edgar Allan Poe</span>
+      </div>
+      <div class="author-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/William_Wordsworth_at_28_by_William_Shuter2.jpg/220px-William_Wordsworth_at_28_by_William_Shuter2.jpg" alt="William Wordsworth">
+        <span>William Wordsworth</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
