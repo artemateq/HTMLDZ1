@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ютуб</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #090909;
+      color: #e8e8e8;
+    }
+    header {
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: #ff0000;
+    }
+    .logo img {
+      width: 90px;
+      height: auto;
+    }
+    .search {
+      flex: 1;
+      min-width: 220px;
+      max-width: 720px;
+      margin: 0 16px;
+      display: flex;
+      background: #141414;
+      border: 1px solid #333;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .search input {
+      flex: 1;
+      padding: 10px 14px;
+      border: none;
+      background: transparent;
+      color: #e8e8e8;
+      outline: none;
+    }
+    .search input::placeholder {
+      color: #8f8f8f;
+    }
+    .search button {
+      padding: 10px 18px;
+      border: none;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+    .search button:hover {
+      background: #2f2f2f;
+    }
+   
+
+    .user-avatar:hover {
+      background: #353535;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .nav {
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      background: #111;
+      border-bottom: 1px solid #222;
+    }
+    .nav a {
+      padding: 10px 14px;
+      text-decoration: none;
+      color: #e8e8e8;
+      background: #1f1f1f;
+      border-radius: 999px;
+      white-space: nowrap;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .nav a:hover {
+      background: #2f2f2f;
+      border-color: #444;
+    }
+    .main {
+      padding: 16px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .card {
+      background: #141414;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      border: 1px solid #202020;
+      flex: 1 1 280px;
+      min-width: 280px;
+      cursor: pointer;
+    }
+    .thumb {
+      width: 100%;
+      display: block;
+      background: #000;
+      height: 210px;
+      pointer-events: none;
+    }
+    .info {
+      padding: 14px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: #fff;
+    }
+    
+    .meta {
+      font-size: 13px;
+      color: #a8a8a8;
+      margin: 0;
+    }
+    .meta {
+      margin-top: 4px;
+    }
+    footer {
+      padding: 16px;
+      text-align: center;
+      color: #8f8f8f;
+      font-size: 14px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 760px) {
+      .logo {
+        flex: 1;
+      }
+      .search {
+        margin: 8px 0;
+      }
+      .nav {
+        padding: 10px 12px;
+      }
+      .nav a {
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+    }
+    @media (max-width: 520px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+      .search {
+        margin: 8px 0;
+      }
+      .search button {
+        padding: 10px 12px;
+      }
+      .user-avatar {
+        margin-left: auto;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .user-avatar{
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ff0000;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      border: 2px solid #ff4444;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" alt="YouTube"></span></div>
+    <div class="search">
+      <input type="text" placeholder="Искать" />
+      <button>Поиск</button>
+    </div>
+    <div class="user-avatar" title="Профиль"><a href="file:///C:/Users/ablon/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/HTML/exam/e.html">А</a></div>
+  </header>
+  <nav class="nav">
+    <a href="#">Все</a>
+    <a href="#">Видеоигры</a>
+    <a href="#">Музыка</a>
+    <a href="#">Джемы</a>
+    <a href="#">Новости</a>
+    <a href="#">Сейчас в эфире</a>
+  </nav>
+  <main class="main">
+    <section class="grid">
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/G0f_BRYJL6g" title="I Gave $500,000 To Random People" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave $500,000 To Random People</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">45 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/2MYW7kNWsWg" title="I Gave My Credit Card To Random People" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave My Credit Card To Random People</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">33 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/qqhVtQFIVTg" title="I Bought A Private Island And Moved In" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Bought A Private Island And Moved In</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">23 млн просмотров • 3 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/k4CMyHgpQr0" title="I Bought Everything In A Store - Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Bought Everything In A Store - Challenge</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">19 млн просмотров • 4 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/7TiQhNfJLo0" title="Surviving 24 Hours In The World's Quietest Room" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">Surviving 24 Hours In The World's Quietest Room</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">17 млн просмотров • 1 год назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/0u5ZF6xPnE0" title="I Gave $1,000,000 Of Food To People In Need" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave $1,000,000 Of Food To People In Need</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">26 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/G0f_BRYJL6g" title="I Gave $500,000 To Random People" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave $500,000 To Random People</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">45 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/2MYW7kNWsWg" title="I Gave My Credit Card To Random People" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave My Credit Card To Random People</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">33 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/qqhVtQFIVTg" title="I Bought A Private Island And Moved In" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Bought A Private Island And Moved In</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">23 млн просмотров • 3 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/k4CMyHgpQr0" title="I Bought Everything In A Store - Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Bought Everything In A Store - Challenge</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">19 млн просмотров • 4 года назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/7TiQhNfJLo0" title="Surviving 24 Hours In The World's Quietest Room" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">Surviving 24 Hours In The World's Quietest Room</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">17 млн просмотров • 1 год назад</p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='vid.html'">
+        <iframe class="thumb" src="https://www.youtube.com/embed/0u5ZF6xPnE0" title="I Gave $1,000,000 Of Food To People In Need" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="info">
+          <p class="title">I Gave $1,000,000 Of Food To People In Need</p>
+          <p class="channel">MrBeast</p>
+          <p class="meta">26 млн просмотров • 2 года назад</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

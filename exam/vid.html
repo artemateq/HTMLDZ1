@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр YouTube</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .video-wrapper {
+            width: 90%;
+            max-width: 960px;
+            aspect-ratio: 16 / 9;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .logo {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: inline-flex;
+            width: 56px;
+            height: 40px;
+            text-decoration: none;
+        }
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="exam.html" title="Перейти на exam.html">
+        <svg viewBox="0 0 100 70" aria-hidden="true">
+            <rect width="100" height="70" rx="16" fill="#FF0000"></rect>
+            <polygon points="38,18 38,52 70,35" fill="#fff"></polygon>
+        </svg>
+    </a>
+    <div class="page">
+        <div class="main">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video player"></iframe>
+            </div>
+            <div class="video-info">
+                <h1>Игроки от 10 до 50 лет соревнуются в турнире 1 на 1 за $5000!</h1>
+                <p>Описание видео...</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
